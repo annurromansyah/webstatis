@@ -1,0 +1,166 @@
+body{
+	background:url(../gambar/dot.gif); background: contain;
+}
+*{margin: 0px; padding: 0px}
+header,footer,section, nav{display: block;}
+.webstatis{
+	margin: 15px auto;
+	width: 980px
+	
+}
+#logo{
+	float: left;
+	height: 165px;
+	margin-right: 10px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#judul{
+	height: 115px;
+	margin: 10px auto -15px auto;
+	padding: 3px 20px 50px 10px;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+	background: url(../gambar/pp.jpg); background: contain;
+	width: 70%;
+}
+#judul h1{
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 500px;
+	color: blue;
+}
+#judul h2{
+	margin-top: 10px;
+	font-size: 28px;
+	font-weight: 300px;
+	color: cyan;
+}
+/*bagian menu-navigasi*/
+menu ul{
+	neverflow: auto;
+}
+nav ul{
+	width: 100%;
+	background: url(../gambar/kayu.jpg); background: contain;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	padding: 0px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+}
+nav ul::after{
+	content: "";
+	clear: both;
+	display: block;
+	border-radius: 50px;
+}
+nav ul li{
+	float: left;
+}
+nav ul li:hover{
+	background: url(../gambar/ii.jpg); background: contain;
+	border-radius: 10px;
+}
+/*huruf ketika di ketik*/
+nav ul li:hover a{
+	color: #10C4E7;
+}
+/*huruf yang nampak*/
+nav ul li a{
+	display: block;
+	padding: 10px 20px;
+	color: #3B5D66;
+	text-decoration: none;
+}
+/*menghilangkan semua sub menu*/
+nav ul ul{
+	display: none;
+	background:  url(../gambar/dot.gif); background: contain;
+	border-radius: 10px;
+	padding: 5px;
+	position: absolute;
+	top: 100%;
+	width: 30%;
+	
+}
+/*munculkan sub menu ketika di dekati kursor*/
+nav ul li:hover ul{
+	display: block;
+	color: blue;
+	border-radius: 10px;
+}
+nav ul ul li{
+	float: none;
+	border-top: 1px solid #00ffff;
+	position: relative;
+}
+nav ul ul li a{
+	padding: 10px 15px;
+	color: #2C2C2C;
+}
+nav ul ul li a:hover{
+	background: url(../gambar/ii.jpg); background: contain;
+	border-radius: 10px;
+}
+nav ul ul ul{
+	position: absolute;
+	left: 100%;
+	top: 0%;
+}
+
+/*bagian isi*/
+#konten{
+	padding-bottom: 10px;
+	float: left;
+	width: 652px;
+	height: 900px;
+	border-radius: 10px;
+	background:  url(../gambar/kk.gif); background: contain;
+}
+#konten h1{
+align-items: center;
+
+}
+#konten form{
+padding-left: 100px;
+padding-top: 30px;
+}
+
+#sidebar{
+	background-image:  url(../gambar/ff.jpg); background: contain;
+	float: right;
+	width: 255px;
+	height: 900px;
+	margin: -25px auto 0px auto;
+	padding: 100px 0px 50px 20px;
+	border-radius: -15px -15px 0 0;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+	padding-top: 50px;
+	color: chocolate;
+}
+#sidebar h1{
+align-items: center;
+
+}
+#sidebar form{
+padding-left: 25px;
+padding-top: -30px;
+
+}
+/*bagian bawah/footer*/
+#footer{
+	clear: both;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: verdana;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+	width: 980px;
+	text-shadow: 5px 5px 5px #ff0000;
+	background:  url(../gambar/jj.jpg); background: contain;
+	height: 80%;
+}
